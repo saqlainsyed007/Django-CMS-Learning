@@ -1,0 +1,11 @@
+h1.myh1
+{
+	color:red;
+	font-family: "comic sans ms";
+}
+div.mydiv
+{
+	background-color: green;
+	border: solid 4px;
+	border-radius: 10px;
+}
