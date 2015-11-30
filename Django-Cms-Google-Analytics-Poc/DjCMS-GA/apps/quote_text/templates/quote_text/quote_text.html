@@ -1,0 +1,42 @@
+<div class="container dnn-quote-text-container">
+	<div class="row">
+		<div class=" col-xs-1 dnn-quote-text-offset">
+		</div>
+		<div class="col-xs-6 dnn-quote-text-content">
+			{% if instance.left_item_type == "TEXT" %}		
+				<div class="dnn-quote-text-title-text">
+					<center>
+						<div class="dnn-quote-text-title">{{instance.left_title}}</div>
+					</center>
+					<div class="dnn-quote-text-text">{{instance.left_text|safe}}</div>
+				</div>
+			{% else %}
+				<div class="dnn-quote-text-quote">
+					<center>
+						"{{instance.left_quote}}"
+					</center>
+				</div>
+			{% endif %}
+		</div>
+		<div class=" col-xs-1 dnn-quote-text-offset">
+		</div>
+		<div class="col-xs-6 dnn-quote-text-content">
+			{% if instance.right_item_type == "TEXT" %}
+				<div class="dnn-quote-text-title-text">
+					<center>
+						<div class="dnn-quote-text-title">{{instance.right_title}}</div>
+					</center>
+					<div class="dnn-quote-text-text">{{instance.right_text|safe}}</div>
+				</div>
+			{% else %}
+				<div class="dnn-quote-text-quote">
+					<center>
+						"{{instance.right_quote}}"
+					</center>
+				</div>
+			{% endif %}
+		</div>
+		<div class=" col-xs-1 dnn-quote-text-offset">
+		</div>
+	</div>
+</div>

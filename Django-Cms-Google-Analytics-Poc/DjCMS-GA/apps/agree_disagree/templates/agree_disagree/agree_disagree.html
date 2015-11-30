@@ -1,0 +1,69 @@
+{% load cms_tags staticfiles sekizai_tags %}
+<div class="container dnn-agree-disagree-content">
+	<div class="row dnn-agree-disagree-row">
+	 	<div class="col-xs-12">
+	 		<center>
+		 		<div class="dnn-agree-disagree-title">{{instance.title|safe}}</div><br>
+		 		<div class="dnn-agree-disagree-title-text">{{instance.title_text|safe}}</div>
+		 		<br><br><br>
+		 	</center>
+	 	</div>
+	</div>
+	<div class="row dnn-agree-disagree-row">
+	 	<div class="col-xs-4 col-xs-offset-1 dnn-agree-disagree-yes" pluginInstance="{{instance.id}}">
+	 		<center>
+		 		<svg width="117px" height="117px" viewBox="0 0 117 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" class="option yes dnn-agree-disagree-yes-svg">
+				    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+				    <title>yes</title>
+				    <desc>Created with Sketch.</desc>
+				    <defs></defs>
+				    <g id="Questionnaire-03-30" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+				        <g id="P-29---Questionnaire---External-Product" sketch:type="MSArtboardGroup" transform="translate(-442.000000, -306.000000)" stroke="{% if instance.selected %}white{% else %} #0079C1 {% endif %}" fill="{% if instance.selected %}#00436C{% else %} white {% endif %}">
+				            <g id="yes" sketch:type="MSLayerGroup" transform="translate(443.000000, 307.000000)">
+				                <circle id="Oval-79-Copy-27" sketch:type="MSShapeGroup" cx="57.5" cy="57.5" r="57.5"></circle>
+				                <path d="M76.2068966,69.176535 C76.2068966,70.9061902 75.3793103,72.4868798 72.8965517,72.4868798 L70.4137931,72.4868798 C72.1426207,72.4868798 73.7241379,73.314466 73.7241379,75.7972247 C73.7241379,77.4523971 72.0689655,78.2799833 71.2413793,78.2799833 L57.6764138,78.2799833 C49.3277241,78.2799833 50.6957241,74.9696385 34,74.9696385 L34,56.7627419 L39.7931034,56.7627419 C47.0973793,56.7627419 56.3448276,49.3558453 56.3448276,39.3834316 C56.3448276,36.0838453 62.137931,35.6063281 62.137931,41.8661902 C62.137931,46.040535 60.4827586,53.4523971 60.4827586,53.4523971 L77.0344828,53.4523971 C78.7633103,53.4523971 80.3448276,55.0339143 80.3448276,56.7627419 C80.3448276,58.4923971 78.7633103,60.0730867 77.0344828,60.0730867 L74.5517241,60.0730867 C76.2805517,60.0730867 78.6896552,61.6537764 78.6896552,63.3834316 C78.6896552,65.1130867 77.1081379,66.6937764 75.3793103,66.6937764 L72.8965517,66.6937764 C74.6253793,66.6937764 76.2068966,67.5213626 76.2068966,69.176535 Z" id="Imported-Layers-Copy-13" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+				            </g>
+				        </g>
+				    </g>
+				</svg>
+				<p class="dnn-agree-disagree-caption {% if instance.selected %}dnn-agree-disagree-caption-selected{% endif %}">Agree</p>
+			</center>
+		</div>
+		<div class="col-xs-2">
+			
+		</div>
+		<div class="col-xs-4 dnn-agree-disagree-no" pluginInstance="{{instance.id}}">
+			<center>
+				<svg width="117px" height="117px" viewBox="0 0 117 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" class="option no dnn-agree-disagree-no-svg">
+				    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+				    <title>no</title>
+				    <desc>Created with Sketch.</desc>
+				    <defs></defs>
+				    <g id="Questionnaire-03-30" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+				        <g id="P-29---Questionnaire---External-Product" sketch:type="MSArtboardGroup" transform="translate(-637.000000, -306.000000)" stroke="{% if instance.selected %}#0079C1{% else %} white {% endif %}" fill="{% if instance.selected %}white{% else %} #00436C {% endif %}">
+				            <g id="no" sketch:type="MSLayerGroup" transform="translate(638.000000, 307.000000)">
+				                <circle id="Oval-79-Copy-28" sketch:type="MSShapeGroup" cx="57.5" cy="57.5" r="57.5"></circle>
+				                <path d="M41.4482759,47.5862069 L41.4482759,47.5862069 C39.7194483,47.5862069 38.137931,46.7586207 38.137931,45.1034483 C38.137931,43.3737931 38.9655172,41.7931034 41.4482759,41.7931034 L43.9310345,41.7931034 C42.2022069,41.7931034 40.6206897,40.9655172 40.6206897,38.4827586 C40.6206897,36.8275862 42.2758621,36 43.1034483,36 L56.6684138,36 C65.0171034,36 63.6491034,39.3103448 80.3448276,39.3103448 L80.3448276,57.5172414 L74.5517241,57.5172414 C67.2474483,57.5172414 58,64.9241379 58,74.8965517 C58,78.1961379 52.2068966,78.6753103 52.2068966,72.4137931 C52.2068966,68.2394483 53.862069,60.8275862 53.862069,60.8275862 L37.3103448,60.8275862 C35.5815172,60.8275862 34,59.246069 34,57.5172414 C34,55.7875862 35.5815172,54.2068966 37.3103448,54.2068966 L39.7931034,54.2068966 C38.0642759,54.2068966 35.6551724,52.6253793 35.6551724,50.8965517 C35.6551724,49.1668966 37.2366897,47.5862069 38.9655172,47.5862069 L41.4482759,47.5862069" id="Imported-Layers-Copy-15" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+				            </g>
+				        </g>
+				    </g>
+				</svg>
+				<p class="dnn-agree-disagree-caption {% if instance.selected %}{% else %} dnn-agree-disagree-caption-selected {% endif %}">Disagree</p>
+			</center>
+	 	</div>
+	</div>
+	<div class="row dnn-agree-disagree-row">
+	 	<div class="col-xs-12">
+	 		<br><br>
+	 		<center>
+		 		<div class="dnn-agree-disagree-subtitle">{{instance.subtitle|safe}}</div>
+		 		<div class="dnn-agree-disagree-subtitle-caption">{{instance.subtitle_caption|safe}}</div>
+		 		<div class="dnn-agree-disagree-subtitle-text">{{instance.subtitle_text|safe}}</div>
+	 		</center>
+	 	</div>
+	</div>
+</div>
+{% addtoblock 'js' %}
+	<script type="text/javascript" src="{% static 'agree_disagree/js/agree_disagree.js' %}"></script>
+{% endaddtoblock %}
+

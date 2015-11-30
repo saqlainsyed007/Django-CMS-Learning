@@ -1,0 +1,40 @@
+<div class="container dnn-multiple-images-container">
+	<div class="row dnn-multiple-images-title">
+		<center>
+			{{instance.title}}
+		</center>
+	</div>
+	<br>
+	{%if instance.no_of_images == 2 %}
+		<div class="row dnn-multiple-images-content">
+			<div class="col-xs-6">
+				<center>
+					<img src="/media/{{instance.image1}}" height="500px" width="325px">
+				</center>
+			</div>
+			<div class="col-xs-6">
+				<center>
+					<img src="/media/{{instance.image2}}" height="500px" width="325px">
+				</center>
+			</div>
+		</div>
+	{% elif instance.no_of_images == 3 %}
+		<div class="row dnn-multiple-images-content">
+			<div class="col-xs-4">
+				<center>
+					<img src="/media/{{instance.image1}}" height="500px" width="200px">
+				</center>
+			</div>
+			<div class="col-xs-4">
+				<center>
+					<img src="/media/{{instance.image1}}" height="500px" width="200px">
+				</center>
+			</div>
+			<div class="col-xs-4">
+				<center>
+					<img src="/media/{{instance.image1}}" height="500px" width="200px">
+				</center>
+			</div>	
+		</div>
+	{% endif %}
+</div>

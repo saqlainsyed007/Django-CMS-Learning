@@ -1,0 +1,20 @@
+{% load cms_tags staticfiles sekizai_tags compress %}
+<html>
+  <head>
+      <title>{% page_attribute "page_title" %}</title>
+    {% compress css %}
+      <link rel="stylesheet" type="text/css" href="{% static 'css/apps.css' %}" />
+    {% endcompress %}
+    {% render_block "css"  postprocessor "compressor.contrib.sekizai.compress" %}
+  </head>
+  <body>
+      {% cms_toolbar %}
+      <!--{% placeholder base_content %}-->
+      {% block base_content %}{% endblock %}
+
+      <script type="text/javascript" src="{% static 'js/jquery-1.11.3.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/jquery-ui-1.11.4.custom/jquery-ui.js' %}"></script>
+
+      {% render_block "js" %}
+  </body>
+</html>

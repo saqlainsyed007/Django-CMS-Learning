@@ -1,0 +1,25 @@
+{
+  "name": "dnncms",
+  "version": "0.0.1",
+  "description": "dnn-cms",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gale43/BMO-DNN.git"
+  },
+  "keywords": [
+    "DNN"
+  ],
+  "author": "Gale Partners",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Gale43/BMO-DNN/issues"
+  },
+  "homepage": "https://github.com/Gale43/BMO-DNN#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
