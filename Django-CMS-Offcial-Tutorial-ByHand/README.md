@@ -162,6 +162,7 @@ $ sudo ln -s /usr/bin/nodejs /usr/bin/node
 $ sudo npm install -g gulp
 $ sudo npm install gulp
 $ sudo npm install gulp-less gulp-minify-css gulp-rename gulp-plumber
+$ sudo npm install gulp-concat gulp-uglify shelljs
 ```
 
 Once installed, then you can just say:
